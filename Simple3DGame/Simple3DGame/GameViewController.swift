@@ -2,8 +2,8 @@
 //  GameViewController.swift
 //  Simple3DGame
 //
-//  Created by Juhel on 10/06/2020.
-//  Copyright © 2020 Juhel Miah. All rights reserved.
+//  Created by M07 on 10/06/2020.
+//  Copyright © 2020 M07. All rights reserved.
 //
 
 import UIKit
