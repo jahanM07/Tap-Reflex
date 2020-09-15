@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cwt-aG-w1j">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Comic_Andy.ttf">
+            <string>comicandy</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Leaderboard View Controller-->
+        <scene sceneID="jWV-ab-CDC">
+            <objects>
+                <viewController id="hrF-4Y-ylY" customClass="LeaderboardViewController" customModule="Simple3DGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YJW-te-P05">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rosette" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="hRT-yA-jcf">
+                                <rect key="frame" x="182" y="20" width="50" height="51"/>
+                                <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="EBw-Vo-IRr"/>
+                                    <constraint firstAttribute="height" constant="50" id="JEz-BU-Rey"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leaderboard" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5S-CN-Jwk">
+                                <rect key="frame" x="81" y="71" width="252" height="64"/>
+                                <fontDescription key="fontDescription" name="comicandy" family="comic andy" pointSize="57"/>
+                                <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="woC-Ke-LBg">
+                                <rect key="frame" x="40" y="164" width="334" height="60.5"/>
+                                <string key="text">Since this is a beta trial, the leaderboard feature is not available yet. However, the top score only for this device is displayed below.</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Top Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g62-1n-LTk">
+                                <rect key="frame" x="40" y="328" width="334" height="31.5"/>
+                                <fontDescription key="fontDescription" name="comicandy" family="comic andy" pointSize="28"/>
+                                <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="ugr-tS-bws">
+                                <rect key="frame" x="60" y="368" width="80.5" height="21"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gR0-Bq-J8U">
+                                        <rect key="frame" x="0.0" y="0.0" width="14.5" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="KF0-lr-AW8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BV0-yt-ylS">
+                                        <rect key="frame" x="37.5" y="0.0" width="43" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="fW8-t2-0g3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="smd-1F-XEe">
+                                <rect key="frame" x="96" y="743" width="222" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Rao-cb-uq5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="comicandy" family="comic andy" pointSize="35"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="3" maxY="0.0"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="3" maxY="5"/>
+                                <state key="normal" title=" Let's beat it!">
+                                    <color key="titleColor" red="0.47058823529999999" green="0.77647058820000003" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="goBackButton:" destination="pfq-GJ-EYt" eventType="touchUpInside" id="1E4-DT-hmT"/>
+                                    <action selector="goBackButtonTapped:" destination="hrF-4Y-ylY" eventType="touchUpInside" id="WhD-8a-Tf8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Qaa-45-bqi" firstAttribute="trailing" secondItem="A5S-CN-Jwk" secondAttribute="trailing" constant="81" id="2sv-zP-PYV"/>
+                            <constraint firstItem="A5S-CN-Jwk" firstAttribute="top" secondItem="hRT-yA-jcf" secondAttribute="bottom" id="Jd3-HJ-afh"/>
+                            <constraint firstItem="ugr-tS-bws" firstAttribute="top" secondItem="g62-1n-LTk" secondAttribute="bottom" constant="8.5" id="KAw-td-c1F"/>
+                            <constraint firstItem="g62-1n-LTk" firstAttribute="leading" secondItem="Qaa-45-bqi" secondAttribute="leading" constant="40" id="RpU-r0-YbT"/>
+                            <constraint firstItem="g62-1n-LTk" firstAttribute="top" secondItem="woC-Ke-LBg" secondAttribute="bottom" constant="103.5" id="U1H-1A-ulg"/>
+                            <constraint firstItem="hRT-yA-jcf" firstAttribute="centerX" secondItem="YJW-te-P05" secondAttribute="centerX" id="W0m-Vz-602"/>
+                            <constraint firstItem="woC-Ke-LBg" firstAttribute="leading" secondItem="Qaa-45-bqi" secondAttribute="leading" constant="40" id="Xfe-Tr-tmH"/>
+                            <constraint firstAttribute="trailing" secondItem="woC-Ke-LBg" secondAttribute="trailing" constant="40" id="YSx-b9-Cm0"/>
+                            <constraint firstItem="smd-1F-XEe" firstAttribute="leading" secondItem="Qaa-45-bqi" secondAttribute="leading" constant="96" id="bpO-Rb-e3A"/>
+                            <constraint firstItem="ugr-tS-bws" firstAttribute="leading" secondItem="Qaa-45-bqi" secondAttribute="leading" constant="60" id="cL6-HC-XbO"/>
+                            <constraint firstItem="A5S-CN-Jwk" firstAttribute="leading" secondItem="Qaa-45-bqi" secondAttribute="leading" constant="81" id="gBU-ZW-2sL"/>
+                            <constraint firstItem="Qaa-45-bqi" firstAttribute="bottom" secondItem="smd-1F-XEe" secondAttribute="bottom" constant="20" id="kCh-bc-SqH"/>
+                            <constraint firstItem="woC-Ke-LBg" firstAttribute="top" secondItem="A5S-CN-Jwk" secondAttribute="bottom" constant="29" id="odC-CK-2Z4"/>
+                            <constraint firstItem="Qaa-45-bqi" firstAttribute="trailing" secondItem="smd-1F-XEe" secondAttribute="trailing" constant="96" id="pDO-5D-Dum"/>
+                            <constraint firstItem="hRT-yA-jcf" firstAttribute="top" secondItem="Qaa-45-bqi" secondAttribute="top" constant="21" id="qFj-AP-H8r"/>
+                            <constraint firstItem="Qaa-45-bqi" firstAttribute="trailing" secondItem="g62-1n-LTk" secondAttribute="trailing" constant="40" id="uwG-qP-oSG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Qaa-45-bqi"/>
+                    </view>
+                    <connections>
+                        <outlet property="goBackButton" destination="smd-1F-XEe" id="mCD-s7-Lcj"/>
+                        <outlet property="topScoreLabel" destination="BV0-yt-ylS" id="7xu-NC-RgI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AEc-2N-4eE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1472.4637681159422" y="91.741071428571431"/>
+        </scene>
+        <!--Splash Page View Controller-->
+        <scene sceneID="3uW-9R-kLb">
+            <objects>
+                <viewController id="cwt-aG-w1j" customClass="SplashPageViewController" customModule="Simple3DGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Whk-5M-kNO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-15" translatesAutoresizingMaskIntoConstraints="NO" id="OwZ-te-TFl">
+                                <rect key="frame" x="85" y="144" width="244" height="164"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="TAP," textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0Sc-UG-44w">
+                                        <rect key="frame" x="0.0" y="0.0" width="244" height="89.5"/>
+                                        <fontDescription key="fontDescription" name="comicandy" family="comic andy" pointSize="80"/>
+                                        <color key="textColor" red="0.47058823529411764" green="0.77647058823529413" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TAP, TAP!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="udE-ib-Z0x">
+                                        <rect key="frame" x="0.0" y="74.5" width="244" height="89.5"/>
+                                        <fontDescription key="fontDescription" name="comicandy" family="comic andy" pointSize="80"/>
+                                        <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="AIE-GA-lip">
+                                <rect key="frame" x="0.0" y="405" width="414" height="251"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMV-df-Tc0">
+                                        <rect key="frame" x="157" y="0.0" width="100" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="fFx-Zm-SBx"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="comicandy" family="comic andy" pointSize="50"/>
+                                        <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title=" Play" image="play.fill" catalog="system">
+                                            <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="BV1-FR-VrT" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="Fk7-Sm-mlC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G8y-jo-Tdg">
+                                        <rect key="frame" x="97" y="65" width="220" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="220" id="6vg-MP-rGl"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="comicandy" family="comic andy" pointSize="50"/>
+                                        <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title=" How to play" image="questionmark.circle.fill" catalog="system">
+                                            <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="pfq-GJ-EYt" kind="presentation" id="W8J-2t-Sud"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQG-OW-w4b">
+                                        <rect key="frame" x="97" y="130" width="220" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="220" id="oDk-qP-U9r"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="comicandy" family="comic andy" pointSize="50"/>
+                                        <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title=" Leaderboard" image="rosette" catalog="system">
+                                            <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="hrF-4Y-ylY" kind="presentation" id="aXg-WH-WRw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rLB-CV-7GG">
+                                        <rect key="frame" x="117" y="195" width="180" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="180" id="Gfe-2C-r86"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="comicandy" family="comic andy" pointSize="50"/>
+                                        <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title=" Settings" image="gear" catalog="system">
+                                            <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="f3g-WW-V9l" customClass="AnimationView" customModule="Lottie">
+                                <rect key="frame" x="112" y="330" width="128" height="128"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="RFN-eo-w3N"/>
+                                    <constraint firstAttribute="height" constant="128" id="i7l-cG-QDP"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="bouncingTealBall"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="3LJ-fc-uOj" customClass="AnimationView" customModule="Lottie">
+                                <rect key="frame" x="155" y="316" width="128" height="128"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="ShU-at-BI2"/>
+                                    <constraint firstAttribute="height" constant="128" id="nGK-Dd-lgE"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="bouncingPinkBall"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="OwZ-te-TFl" firstAttribute="top" secondItem="vm7-le-B6P" secondAttribute="top" constant="100" id="4dV-db-V0C"/>
+                            <constraint firstItem="vm7-le-B6P" firstAttribute="trailing" secondItem="AIE-GA-lip" secondAttribute="trailing" id="9fc-f7-qxS"/>
+                            <constraint firstItem="OwZ-te-TFl" firstAttribute="leading" secondItem="vm7-le-B6P" secondAttribute="leading" constant="85" id="AYH-hB-ow3"/>
+                            <constraint firstItem="f3g-WW-V9l" firstAttribute="leading" secondItem="vm7-le-B6P" secondAttribute="leading" constant="112" id="MdT-wE-oVM"/>
+                            <constraint firstItem="OwZ-te-TFl" firstAttribute="centerX" secondItem="Whk-5M-kNO" secondAttribute="centerX" id="Nlp-3b-80b"/>
+                            <constraint firstItem="3LJ-fc-uOj" firstAttribute="leading" secondItem="vm7-le-B6P" secondAttribute="leading" constant="155" id="PGz-PE-ABr"/>
+                            <constraint firstItem="AIE-GA-lip" firstAttribute="leading" secondItem="vm7-le-B6P" secondAttribute="leading" id="YvW-dF-lI5"/>
+                            <constraint firstItem="vm7-le-B6P" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="AIE-GA-lip" secondAttribute="bottom" constant="211" id="fwx-Sz-hps"/>
+                            <constraint firstItem="vm7-le-B6P" firstAttribute="trailing" secondItem="OwZ-te-TFl" secondAttribute="trailing" constant="85" id="kZ4-xJ-0Gc"/>
+                            <constraint firstItem="AIE-GA-lip" firstAttribute="centerX" secondItem="Whk-5M-kNO" secondAttribute="centerX" id="oYn-sS-GYg"/>
+                            <constraint firstItem="3LJ-fc-uOj" firstAttribute="top" secondItem="OwZ-te-TFl" secondAttribute="bottom" constant="8" id="ol5-Yz-1qz"/>
+                            <constraint firstItem="AIE-GA-lip" firstAttribute="top" secondItem="f3g-WW-V9l" secondAttribute="bottom" constant="-53" id="sh2-ur-LaX"/>
+                            <constraint firstItem="AIE-GA-lip" firstAttribute="top" secondItem="OwZ-te-TFl" secondAttribute="bottom" constant="97" id="yQM-WD-jx9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vm7-le-B6P"/>
+                    </view>
+                    <connections>
+                        <outlet property="animationView1" destination="f3g-WW-V9l" id="WAu-mD-Csz"/>
+                        <outlet property="animationView2" destination="3LJ-fc-uOj" id="qy7-yp-eCr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H6g-de-cHg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-652.17391304347836" y="91.741071428571431"/>
+        </scene>
+        <!--How To Play View Controller-->
+        <scene sceneID="1nu-1Q-kTS">
+            <objects>
+                <viewController id="pfq-GJ-EYt" customClass="HowToPlayViewController" customModule="Simple3DGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GWk-UU-DdT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to play?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="IHA-TM-If0">
+                                <rect key="frame" x="81" y="71" width="252" height="64"/>
+                                <fontDescription key="fontDescription" name="comicandy" family="comic andy" pointSize="57"/>
+                                <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="questionmark.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="JkC-HB-xmh">
+                                <rect key="frame" x="182" y="21.5" width="50" height="49"/>
+                                <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Mhr-mZ-Dlx"/>
+                                    <constraint firstAttribute="width" constant="50" id="PJd-c1-oAN"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Ppu-CX-wXY">
+                                <rect key="frame" x="40" y="164" width="334" height="40.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Tap the ">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="HelveticaNeue-Light"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="blue">
+                                        <attributes>
+                                            <color key="NSColor" name="systemTealColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue-Bold"/>
+                                            <font key="NSOriginalFont" size="17" name="HelveticaNeue-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" balls to add to your tap streak, easy right?">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="HelveticaNeue-Light"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="zoI-a4-itW">
+                                <rect key="frame" x="40" y="212.5" width="334" height="80.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Well stop right there! Every ">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="HelveticaNeue-Light"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="blue">
+                                        <attributes>
+                                            <color key="NSColor" name="systemTealColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue-Bold"/>
+                                            <font key="NSOriginalFont" size="17" name="HelveticaNeue-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ball you fail to tap on, before it leaves the screen, will cost one of your attempts. You can only miss 5 balls.">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="HelveticaNeue-Light"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="nLn-wx-K64">
+                                <rect key="frame" x="40" y="301" width="334" height="40.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="To add to that, you can only afford to hit 3 ">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="HelveticaNeue-Light"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="red">
+                                        <attributes>
+                                            <color key="NSColor" name="systemPinkColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue-Bold"/>
+                                            <font key="NSOriginalFont" size="17" name="HelveticaNeue-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" balls, causing the game to end.">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="HelveticaNeue-Light"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ul2-JY-jzA">
+                                <rect key="frame" x="40" y="349.5" width="334" height="48"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Aim of the game is to get your tap streak high as possible. So good luck and ">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="HelveticaNeue-Light"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="tap, tap, tap!">
+                                        <attributes>
+                                            <color key="NSColor" name="systemOrangeColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="25" name="comicandy"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="meb-fv-3m8">
+                                <rect key="frame" x="96" y="743" width="222" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="WKI-LX-sW1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="comicandy" family="comic andy" pointSize="35"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="3" maxY="0.0"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="5"/>
+                                <state key="normal" title=" Sounds good!">
+                                    <color key="titleColor" red="0.47058823529999999" green="0.77647058820000003" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="goBackButton:" destination="pfq-GJ-EYt" eventType="touchUpInside" id="aNW-3Y-h2E"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="meb-fv-3m8" firstAttribute="leading" secondItem="tqf-7Y-esR" secondAttribute="leading" constant="96" id="1pI-ZS-RGR"/>
+                            <constraint firstItem="nLn-wx-K64" firstAttribute="top" secondItem="zoI-a4-itW" secondAttribute="bottom" constant="8" id="2ZB-ii-ece"/>
+                            <constraint firstItem="Ppu-CX-wXY" firstAttribute="leading" secondItem="tqf-7Y-esR" secondAttribute="leading" constant="40" id="42S-x1-fo6"/>
+                            <constraint firstItem="tqf-7Y-esR" firstAttribute="trailing" secondItem="meb-fv-3m8" secondAttribute="trailing" constant="96" id="ARt-va-ItJ"/>
+                            <constraint firstItem="tqf-7Y-esR" firstAttribute="trailing" secondItem="zoI-a4-itW" secondAttribute="trailing" constant="40" id="AiG-dW-aai"/>
+                            <constraint firstItem="ul2-JY-jzA" firstAttribute="leading" secondItem="tqf-7Y-esR" secondAttribute="leading" constant="40" id="Jad-cJ-Lsw"/>
+                            <constraint firstItem="IHA-TM-If0" firstAttribute="top" secondItem="JkC-HB-xmh" secondAttribute="bottom" id="QiQ-k3-SQX"/>
+                            <constraint firstItem="nLn-wx-K64" firstAttribute="leading" secondItem="tqf-7Y-esR" secondAttribute="leading" constant="40" id="VLq-KZ-NRz"/>
+                            <constraint firstItem="Ppu-CX-wXY" firstAttribute="top" secondItem="IHA-TM-If0" secondAttribute="bottom" constant="29" id="Ywn-hf-yYq"/>
+                            <constraint firstItem="JkC-HB-xmh" firstAttribute="centerX" secondItem="GWk-UU-DdT" secondAttribute="centerX" id="Yy6-kJ-hiX"/>
+                            <constraint firstItem="ul2-JY-jzA" firstAttribute="top" secondItem="nLn-wx-K64" secondAttribute="bottom" constant="8" id="b4p-19-3a4"/>
+                            <constraint firstItem="JkC-HB-xmh" firstAttribute="top" secondItem="tqf-7Y-esR" secondAttribute="top" constant="21" id="c3b-71-ach"/>
+                            <constraint firstItem="tqf-7Y-esR" firstAttribute="trailing" secondItem="IHA-TM-If0" secondAttribute="trailing" constant="81" id="e3Y-N9-O4P"/>
+                            <constraint firstItem="IHA-TM-If0" firstAttribute="leading" secondItem="tqf-7Y-esR" secondAttribute="leading" constant="81" id="fTR-kv-ip9"/>
+                            <constraint firstItem="zoI-a4-itW" firstAttribute="leading" secondItem="tqf-7Y-esR" secondAttribute="leading" constant="40" id="fdz-9D-XeJ"/>
+                            <constraint firstItem="zoI-a4-itW" firstAttribute="top" secondItem="Ppu-CX-wXY" secondAttribute="bottom" constant="8" id="jAD-e5-L6Z"/>
+                            <constraint firstItem="tqf-7Y-esR" firstAttribute="trailing" secondItem="ul2-JY-jzA" secondAttribute="trailing" constant="40" id="jR7-Gl-hOK"/>
+                            <constraint firstItem="tqf-7Y-esR" firstAttribute="trailing" secondItem="Ppu-CX-wXY" secondAttribute="trailing" constant="40" id="pQS-hs-tDM"/>
+                            <constraint firstItem="tqf-7Y-esR" firstAttribute="bottom" secondItem="meb-fv-3m8" secondAttribute="bottom" constant="20" id="rBb-sR-BVr"/>
+                            <constraint firstItem="tqf-7Y-esR" firstAttribute="trailing" secondItem="nLn-wx-K64" secondAttribute="trailing" constant="40" id="scr-xT-t9P"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tqf-7Y-esR"/>
+                    </view>
+                    <connections>
+                        <outlet property="goBackButtonOutlet" destination="meb-fv-3m8" id="WLf-qp-CmC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xcG-oz-U7V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-652" y="872"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="BV1-FR-VrT" customClass="GameViewController" customModule="Simple3DGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <sceneKitView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="kEa-d4-4ec">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </sceneKitView>
+                    <navigationItem key="navigationItem" id="wlB-WQ-7pu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="83" y="104"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gear" catalog="system" width="128" height="119"/>
+        <image name="play.fill" catalog="system" width="116" height="128"/>
+        <image name="questionmark.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="rosette" catalog="system" width="100" height="128"/>
+    </resources>
+</document>

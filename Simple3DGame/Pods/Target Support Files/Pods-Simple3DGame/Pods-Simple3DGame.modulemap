@@ -1,0 +1,6 @@
+framework module Pods_Simple3DGame {
+  umbrella header "Pods-Simple3DGame-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,449 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		076BCCA3108990F6FDE496AD /* Pods_Simple3DGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CFD7401A0DEC8A3F144DFB /* Pods_Simple3DGame.framework */; };
+		254C52CD2491824A006DAC19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254C52CC2491824A006DAC19 /* AppDelegate.swift */; };
+		254C52D12491824A006DAC19 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254C52D02491824A006DAC19 /* GameViewController.swift */; };
+		254C52D42491824A006DAC19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 254C52D22491824A006DAC19 /* Main.storyboard */; };
+		254C52D624918253006DAC19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 254C52D524918253006DAC19 /* Assets.xcassets */; };
+		254C52D924918253006DAC19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 254C52D724918253006DAC19 /* LaunchScreen.storyboard */; };
+		254C532724930DB7006DAC19 /* HowToPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254C532624930DB7006DAC19 /* HowToPlayViewController.swift */; };
+		254C532924943E44006DAC19 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 254C532824943E43006DAC19 /* GoogleService-Info.plist */; };
+		255EDE232494510600706DAE /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255EDE222494510600706DAE /* LeaderboardViewController.swift */; };
+		259DC83724945D280032A71F /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259DC83624945D280032A71F /* PaddingLabel.swift */; };
+		25DDB9342494478A00D2F014 /* SERIO___.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 25DDB9332494478A00D2F014 /* SERIO___.TTF */; };
+		25DDB9362494482E00D2F014 /* Comic_Andy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25DDB9352494482E00D2F014 /* Comic_Andy.ttf */; };
+		25E9FC072495877300CB0EEA /* Dimbo Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25E9FC062495877200CB0EEA /* Dimbo Regular.ttf */; };
+		25E9FC09249589C700CB0EEA /* bouncingTealBall.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E9FC08249589C600CB0EEA /* bouncingTealBall.json */; };
+		25E9FC0B24958ABC00CB0EEA /* SplashPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E9FC0A24958ABC00CB0EEA /* SplashPageViewController.swift */; };
+		25E9FC0D24958CDC00CB0EEA /* bouncingPinkBall.json in Resources */ = {isa = PBXBuildFile; fileRef = 25E9FC0C24958CDC00CB0EEA /* bouncingPinkBall.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		254C52C92491824A006DAC19 /* Simple3DGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Simple3DGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		254C52CC2491824A006DAC19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		254C52D02491824A006DAC19 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		254C52D32491824A006DAC19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		254C52D524918253006DAC19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		254C52D824918253006DAC19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		254C52DA24918253006DAC19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		254C532624930DB7006DAC19 /* HowToPlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToPlayViewController.swift; sourceTree = "<group>"; };
+		254C532824943E43006DAC19 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		255EDE222494510600706DAE /* LeaderboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardViewController.swift; sourceTree = "<group>"; };
+		259DC83624945D280032A71F /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
+		25DDB9332494478A00D2F014 /* SERIO___.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SERIO___.TTF"; sourceTree = "<group>"; };
+		25DDB9352494482E00D2F014 /* Comic_Andy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Comic_Andy.ttf; sourceTree = "<group>"; };
+		25E9FC062495877200CB0EEA /* Dimbo Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dimbo Regular.ttf"; sourceTree = "<group>"; };
+		25E9FC08249589C600CB0EEA /* bouncingTealBall.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bouncingTealBall.json; sourceTree = "<group>"; };
+		25E9FC0A24958ABC00CB0EEA /* SplashPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPageViewController.swift; sourceTree = "<group>"; };
+		25E9FC0C24958CDC00CB0EEA /* bouncingPinkBall.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bouncingPinkBall.json; sourceTree = "<group>"; };
+		60537CF990EA132C6BB002BB /* Pods-Simple3DGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simple3DGame.debug.xcconfig"; path = "Target Support Files/Pods-Simple3DGame/Pods-Simple3DGame.debug.xcconfig"; sourceTree = "<group>"; };
+		7037E8576D58B94C9312BE67 /* Pods-Simple3DGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simple3DGame.release.xcconfig"; path = "Target Support Files/Pods-Simple3DGame/Pods-Simple3DGame.release.xcconfig"; sourceTree = "<group>"; };
+		F3CFD7401A0DEC8A3F144DFB /* Pods_Simple3DGame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Simple3DGame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		254C52C62491824A006DAC19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				076BCCA3108990F6FDE496AD /* Pods_Simple3DGame.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		254C52C024918249006DAC19 = {
+			isa = PBXGroup;
+			children = (
+				254C52CB2491824A006DAC19 /* Simple3DGame */,
+				254C52CA2491824A006DAC19 /* Products */,
+				E710F714071CFB1CCA9B8C74 /* Pods */,
+				35F79BA7303DAC2B3E0DC68E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		254C52CA2491824A006DAC19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				254C52C92491824A006DAC19 /* Simple3DGame.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		254C52CB2491824A006DAC19 /* Simple3DGame */ = {
+			isa = PBXGroup;
+			children = (
+				254C52CC2491824A006DAC19 /* AppDelegate.swift */,
+				254C52D02491824A006DAC19 /* GameViewController.swift */,
+				254C52D22491824A006DAC19 /* Main.storyboard */,
+				25E9FC0A24958ABC00CB0EEA /* SplashPageViewController.swift */,
+				254C52D524918253006DAC19 /* Assets.xcassets */,
+				254C52D724918253006DAC19 /* LaunchScreen.storyboard */,
+				254C52DA24918253006DAC19 /* Info.plist */,
+				254C532624930DB7006DAC19 /* HowToPlayViewController.swift */,
+				254C532824943E43006DAC19 /* GoogleService-Info.plist */,
+				25DDB9332494478A00D2F014 /* SERIO___.TTF */,
+				25E9FC062495877200CB0EEA /* Dimbo Regular.ttf */,
+				25DDB9352494482E00D2F014 /* Comic_Andy.ttf */,
+				255EDE222494510600706DAE /* LeaderboardViewController.swift */,
+				259DC83624945D280032A71F /* PaddingLabel.swift */,
+				25E9FC08249589C600CB0EEA /* bouncingTealBall.json */,
+				25E9FC0C24958CDC00CB0EEA /* bouncingPinkBall.json */,
+			);
+			path = Simple3DGame;
+			sourceTree = "<group>";
+		};
+		35F79BA7303DAC2B3E0DC68E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3CFD7401A0DEC8A3F144DFB /* Pods_Simple3DGame.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E710F714071CFB1CCA9B8C74 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				60537CF990EA132C6BB002BB /* Pods-Simple3DGame.debug.xcconfig */,
+				7037E8576D58B94C9312BE67 /* Pods-Simple3DGame.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		254C52C82491824A006DAC19 /* Simple3DGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 254C52DD24918253006DAC19 /* Build configuration list for PBXNativeTarget "Simple3DGame" */;
+			buildPhases = (
+				026C87CB2A6E9B453C736B79 /* [CP] Check Pods Manifest.lock */,
+				254C52C52491824A006DAC19 /* Sources */,
+				254C52C62491824A006DAC19 /* Frameworks */,
+				254C52C72491824A006DAC19 /* Resources */,
+				E4ABB725C7E7F953D933DDAB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Simple3DGame;
+			productName = Simple3DGame;
+			productReference = 254C52C92491824A006DAC19 /* Simple3DGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		254C52C124918249006DAC19 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Juhel Miah";
+				TargetAttributes = {
+					254C52C82491824A006DAC19 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 254C52C424918249006DAC19 /* Build configuration list for PBXProject "Simple3DGame" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 254C52C024918249006DAC19;
+			productRefGroup = 254C52CA2491824A006DAC19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				254C52C82491824A006DAC19 /* Simple3DGame */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		254C52C72491824A006DAC19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25E9FC0D24958CDC00CB0EEA /* bouncingPinkBall.json in Resources */,
+				25DDB9342494478A00D2F014 /* SERIO___.TTF in Resources */,
+				254C532924943E44006DAC19 /* GoogleService-Info.plist in Resources */,
+				254C52D924918253006DAC19 /* LaunchScreen.storyboard in Resources */,
+				254C52D624918253006DAC19 /* Assets.xcassets in Resources */,
+				25E9FC072495877300CB0EEA /* Dimbo Regular.ttf in Resources */,
+				25DDB9362494482E00D2F014 /* Comic_Andy.ttf in Resources */,
+				25E9FC09249589C700CB0EEA /* bouncingTealBall.json in Resources */,
+				254C52D42491824A006DAC19 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		026C87CB2A6E9B453C736B79 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Simple3DGame-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4ABB725C7E7F953D933DDAB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Simple3DGame/Pods-Simple3DGame-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Simple3DGame/Pods-Simple3DGame-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Simple3DGame/Pods-Simple3DGame-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		254C52C52491824A006DAC19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				254C52D12491824A006DAC19 /* GameViewController.swift in Sources */,
+				259DC83724945D280032A71F /* PaddingLabel.swift in Sources */,
+				25E9FC0B24958ABC00CB0EEA /* SplashPageViewController.swift in Sources */,
+				254C52CD2491824A006DAC19 /* AppDelegate.swift in Sources */,
+				255EDE232494510600706DAE /* LeaderboardViewController.swift in Sources */,
+				254C532724930DB7006DAC19 /* HowToPlayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		254C52D22491824A006DAC19 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				254C52D32491824A006DAC19 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		254C52D724918253006DAC19 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				254C52D824918253006DAC19 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		254C52DB24918253006DAC19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		254C52DC24918253006DAC19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		254C52DE24918253006DAC19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60537CF990EA132C6BB002BB /* Pods-Simple3DGame.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6S3RGF89R7;
+				INFOPLIST_FILE = Simple3DGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.infinitus-labs.tap-tap-tap";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		254C52DF24918253006DAC19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7037E8576D58B94C9312BE67 /* Pods-Simple3DGame.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6S3RGF89R7;
+				INFOPLIST_FILE = Simple3DGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.infinitus-labs.tap-tap-tap";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		254C52C424918249006DAC19 /* Build configuration list for PBXProject "Simple3DGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				254C52DB24918253006DAC19 /* Debug */,
+				254C52DC24918253006DAC19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		254C52DD24918253006DAC19 /* Build configuration list for PBXNativeTarget "Simple3DGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				254C52DE24918253006DAC19 /* Debug */,
+				254C52DF24918253006DAC19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 254C52C124918249006DAC19 /* Project object */;
+}

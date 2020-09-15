@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>89327937122-2k33okju503ktm1ggd2o3622i4uhin1c.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.89327937122-2k33okju503ktm1ggd2o3622i4uhin1c</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBZFNSHlJs5jZmczK5XXnHynY6yXW234oc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>89327937122</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.infinitus-labs.tap-tap-tap</string>
+	<key>PROJECT_ID</key>
+	<string>tap-tap-tap-io</string>
+	<key>STORAGE_BUCKET</key>
+	<string>tap-tap-tap-io.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:89327937122:ios:7b0d1d0c63afc1269d533b</string>
+	<key>DATABASE_URL</key>
+	<string>https://tap-tap-tap-io.firebaseio.com</string>
+</dict>
+</plist>
